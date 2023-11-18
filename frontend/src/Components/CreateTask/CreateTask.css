@@ -1,0 +1,182 @@
+/* Create New Task Page CSS properties */
+.CreatePage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+/* CSS properties for Form Entire Box Createcontainer */
+.Createcontainer {
+  height: 65%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vmax;
+  /* background-color: #040202; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS properties for Form "Createcontainer -> Textfield */
+.textfield {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS properties for Form Textfield --> Inputfield */
+
+.inputfield {
+  height: fit-content;
+  font-size: 20px;
+  padding: 1.3vmax;
+  margin-top: 1.5vmax;
+  border-radius: 6px;
+  border: 1px solid rgb(206, 203, 203);
+  outline: none;
+}
+
+.inputfield:hover {
+  border: 1px solid black;
+}
+
+.inputfield:focus {
+  border: 3px solid black;
+}
+
+/* CSS properties for Form "Createcontainer --> CreateButton*/
+
+.CreateButton {
+  /* height: 30%; */
+  min-height: fit-content;
+  background-color: rgb(228, 154, 154);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS properties for Form CreateButton -> addTask*/
+
+.addTask {
+  width: 100%;
+  font-size: 20px;
+  padding: 6px;
+  color: white;
+  background-color: rgb(7, 151, 7);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.addTask:hover {
+  background-color: rgb(49, 193, 49);
+}
+
+/* ------>>>> RESPONSIVE  <<<<------- */
+
+/* @media queries are used to apply specific styles to a web page based on the characteristics of the device or viewport, such as its width, height, or orientation */
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 843 pixels. */
+
+@media (max-width: 843px) {
+  .inputfield {
+    font-size: 18px;
+  }
+  .addTask {
+    font-size: 16px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 759pixels. */
+@media (max-width: 759px) {
+  .Createcontainer {
+    height: 60%;
+  }
+  .inputfield {
+    font-size: 16px;
+  }
+  .addTask {
+    font-size: 14px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 676 pixels. */
+@media (max-width: 676px) {
+  .Createcontainer {
+    height: 50%;
+  }
+  .inputfield {
+    font-size: 14px;
+  }
+  .addTask {
+    font-size: 13px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 592 pixels. */
+@media (max-width: 592px) {
+  .Createcontainer {
+    height: 42%;
+  }
+  .inputfield {
+    font-size: 12px;
+  }
+  .addTask {
+    font-size: 12px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 509 pixels. */
+@media (max-width: 509px) {
+  .Createcontainer {
+    height: 40%;
+  }
+  .inputfield {
+    font-size: 12px;
+  }
+  .addTask {
+    font-size: 11px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 400 pixels. */
+@media (max-width: 400px) {
+  .Createcontainer {
+    height: 36%;
+  }
+  .inputfield {
+    font-size: 10px;
+  }
+  .addTask {
+    font-size: 10px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 369 pixels. */
+@media (max-width: 369px) {
+  .Createcontainer {
+    height: 32%;
+  }
+  .inputfield {
+    font-size: 9px;
+  }
+  .addTask {
+    font-size: 8px;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 306 pixels. */
+@media (max-width: 306px) {
+  .Createcontainer {
+    height: 30%;
+  }
+  .inputfield {
+    font-size: 9px;
+  }
+  .addTask {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,103 @@
+.register-page {
+  height: 86vh;
+  width: 100vw;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  height: 55%;
+  width: 40%; /* Adjust the width to make it fit better */
+  padding: 30px; /* Add padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  /* background-color: greenyellow; */
+}
+
+.register-h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: -6px;
+  margin-top: -1px;
+  /* background-color: red; */
+}
+
+.register-input {
+  width: 80%;
+  margin-top: -10px; /* Add more margin for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(255, 149, 0); */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 5px;
+}
+
+.register-inputval {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px; /* Adjust padding for better spacing */
+  margin-top: 10px; /* Adjust margin for spacing */
+  border-radius: 5px;
+  border: 1px solid rgb(206, 203, 203);
+  outline: none;
+}
+
+.register-inputval:hover {
+  border: 1px solid black;
+}
+.register-inputval:focus {
+  border: 2px solid black;
+}
+
+.register-btnflex {
+  height: 30%;
+  width: 80%;
+  margin-top: 13px;
+  /* background-color: orange; */
+}
+
+.register-btn {
+  width: 100%;
+  font-size: 20px;
+  padding: 6px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(251, 60, 2);
+  transition: background-color 0.3s ease; /* Add a transition for smooth hover effect */
+}
+
+.register-btn:hover {
+  background-color: rgba(7, 218, 242, 0.9);
+  color: black;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .register-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .register-input {
+    padding: 12px;
+  }
+
+  .register-inputval {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .register-btn {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
