@@ -42,7 +42,7 @@
 .addtaskbtn {
   /* width: 60%; */
   min-height: fit-content;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 6px;
   color: white;
   background-color: black;
@@ -58,7 +58,7 @@
 /* Css for Logout button */
 .logoutbtn {
   min-height: fit-content;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 6px;
   color: white;
   background-color: blue;
@@ -212,6 +212,10 @@
   .noTask {
     font-size: 1.5rem;
     margin: 0rem;
+  }
+  .addtaskbtn,
+  .logoutbtn {
+    font-size: 1rem;
   }
   .TaskContent h1 {
     font-size: 1.5rem;
