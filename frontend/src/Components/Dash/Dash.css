@@ -42,7 +42,7 @@
 .addtaskbtn {
   /* width: 60%; */
   min-height: fit-content;
-  font-size: 20px;
+  font-size: 1rem;
   padding: 6px;
   color: white;
   background-color: black;
@@ -58,7 +58,7 @@
 /* Css for Logout button */
 .logoutbtn {
   min-height: fit-content;
-  font-size: 20px;
+  font-size: 1rem;
   padding: 6px;
   color: white;
   background-color: blue;
@@ -69,7 +69,7 @@
 
 /* SECTION - 2 : All Content*/
 .middle {
-  height: 13%;
+  min-height: fit-content;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -80,10 +80,12 @@
 .middle-child {
   height: 100%;
   width: 70%;
+  margin: 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 2rem;
   font-weight: 700;
   background-color: #ffffff;
   border-radius: 10px;
@@ -144,7 +146,7 @@
   /* height: fit-content; */
   width: 100%;
   min-height: fit-content;
-  font-size: 20px;
+  font-size: 1.3rem;
   padding: 6px;
   color: white;
   background-color: rgb(7, 151, 7);
@@ -161,7 +163,7 @@
 .deletebtn {
   width: 100%;
   min-height: fit-content;
-  font-size: 20px;
+  font-size: 1.3rem;
   padding: 6px;
   color: white;
   background-color: red;
@@ -180,160 +182,314 @@
   margin: 10px;
 }
 
+.noTask {
+  margin: 0rem;
+}
+.addtaskbtn,
+.logoutbtn {
+  margin: 0.2rem;
+}
+
+.TaskContent h1 {
+  font-size: 2rem;
+}
+.TaskContent h2,
+.TaskContent h3 {
+  font-size: 1.5rem;
+}
+
 /* ------>>>> RESPONSIVE  <<<<------- */
 
 /* @media queries are used to apply specific styles to a web page based on the characteristics of the device or viewport, such as its width, height, or orientation */
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 492 pixels. */
-@media (max-width: 492px) {
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 700 pixels.  */
+@media (max-width: 700px) {
+  .header1 {
+    /* color: yellow; */
+    font-size: 1.7rem;
+  }
+  .middle-child,
+  .noTask {
+    font-size: 1.5rem;
+    margin: 0rem;
+  }
   .TaskContent h1 {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
   .TaskContent h2,
   .TaskContent h3 {
-    font-size: 20px;
+    font-size: 1.3rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 1rem;
+    margin: 0.2rem;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 600 pixels.  */
+@media (max-width: 600px) {
+  .header1 {
+    /* color: orange; */
+    font-size: 1.6rem;
+  }
+  .middle-child,
+  .noTask {
+    font-size: 1.4rem;
+    margin: 0rem;
+  }
+  .addtaskbtn,
+  .logoutbtn {
+    font-size: 0.9rem;
+  }
+  .TaskContent h1 {
+    font-size: 1.4rem;
+  }
+  .TaskContent h2,
+  .TaskContent h3 {
+    font-size: 1.2rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 0.9rem;
+    margin: 0.2rem;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 492 pixels. */
+@media (max-width: 492px) {
+  .header1 {
+    /* color: purple; */
+    font-size: 1.4rem;
+  }
+  .middle-child,
+  .noTask {
+    font-size: 1.2rem;
+  }
+  .addtaskbtn,
+  .logoutbtn {
+    font-weight: 500;
+  }
+  .TaskContent h1 {
+    font-size: 1.2rem;
+  }
+  .TaskContent h2,
+  .TaskContent h3 {
+    font-size: 1rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 0.9rem;
+    margin: 0.2rem;
   }
 }
 
 /* enclosed styles will be applied only when the width of the viewport is less than or equal to 477 pixels. */
 @media (max-width: 477px) {
+  .header1 {
+    font-size: 1.2rem;
+    /* color: greenyellow; */
+  }
   .addtaskbtn,
   .logoutbtn {
-    font-size: 16px;
+    font-size: 0.9rem;
   }
-  .header-h1 {
-    font-size: 15px;
+  .middle-child,
+  .noTask {
+    font-size: 1rem;
+    /* background-color: yellow; */
   }
-  .middle-child {
-    font-size: 24px;
+  .TaskContent h1 {
+    font-size: 1.04rem;
+  }
+  .TaskContent h2,
+  .TaskContent h3 {
+    font-size: 0.89rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 0.78rem;
+    margin: 0.2rem;
   }
 }
 
 /* enclosed styles will be applied only when the width of the viewport is less than or equal to 417 pixels. */
 @media (max-width: 417px) {
+  .header1 {
+    font-size: 1rem;
+    /* color: black; */
+  }
   .addtaskbtn,
   .logoutbtn {
-    font-size: 15px;
+    font-size: 0.7rem;
   }
-
-  .header-h1 {
-    font-size: 13px;
+  .middle-child,
+  .noTask {
+    font-size: 0.9rem;
+    /* background-color: purple; */
   }
 
   .TaskContent h1 {
-    font-size: 25px;
+    font-size: 0.96rem;
   }
   .TaskContent h2,
   .TaskContent h3 {
-    font-size: 18px;
+    font-size: 0.8rem;
   }
-
-  .deletebtn,
-  .editbtn {
-    font-size: 17px;
+  .editbtn,
+  .deletebtn {
+    font-size: 0.7rem;
+    margin: 0.2rem;
   }
 }
 
 /* enclosed styles will be applied only when the width of the viewport is less than or equal to 378 pixels. */
 @media (max-width: 378px) {
+  .header1 {
+    font-size: 0.89rem;
+    /* color: white; */
+  }
   .addtaskbtn,
   .logoutbtn {
-    font-size: 14px;
+    font-size: 0.66rem;
   }
-
-  .header-h1 {
-    font-size: 12px;
-  }
-
-  .middle-child {
-    font-size: 22px;
+  .middle-child,
+  .noTask {
+    font-size: 0.88rem;
+    /* background-color: purple; */
   }
 
   .TaskContent h1 {
-    font-size: 24px;
+    font-size: 0.88rem;
   }
   .TaskContent h2,
   .TaskContent h3 {
-    font-size: 17px;
+    font-size: 0.75rem;
   }
-
-  .deletebtn,
-  .editbtn {
-    font-size: 15px;
+  .editbtn,
+  .deletebtn {
+    font-size: 0.65rem;
+    margin: 0.2rem;
   }
 }
 
 /* enclosed styles will be applied only when the width of the viewport is less than or equal to 360 pixels. */
 @media (max-width: 360px) {
+  .header1 {
+    font-size: 0.85rem;
+    /* color: black; */
+  }
   .addtaskbtn,
   .logoutbtn {
-    font-size: 12px;
+    font-size: 0.61rem;
   }
-
-  .header-h1 {
-    font-size: 11px;
-  }
-
-  .middle-child {
-    font-size: 20px;
+  .middle-child,
+  .noTask {
+    font-size: 0.8rem;
+    /* background-color: yellow; */
   }
 
   .TaskContent h1 {
-    font-size: 22px;
+    font-size: 0.8rem;
   }
   .TaskContent h2,
   .TaskContent h3 {
-    font-size: 15px;
+    font-size: 0.71rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 0.61rem;
+    margin: 0.2rem;
   }
 }
 
 /* enclosed styles will be applied only when the width of the viewport is less than or equal to 321 pixels. */
 @media (max-width: 321px) {
+  .header1 {
+    font-size: 0.82rem;
+    /* color: black; */
+  }
   .addtaskbtn,
   .logoutbtn {
-    font-size: 11px;
+    font-size: 0.58rem;
   }
-
-  .header-h1 {
-    font-size: 10px;
-  }
-
-  .middle-child {
-    font-size: 18px;
+  .middle-child,
+  .noTask {
+    font-size: 0.77rem;
+    /* background-color: yellow; */
   }
 
   .TaskContent h1 {
-    font-size: 20px;
+    font-size: 0.77rem;
   }
   .TaskContent h2,
   .TaskContent h3 {
-    font-size: 14px;
+    font-size: 0.69rem;
   }
-  .deletebtn,
-  .editbtn {
-    font-size: 15px;
+  .editbtn,
+  .deletebtn {
+    font-size: 0.58rem;
+    margin: 0.2rem;
   }
 }
 
 /* enclosed styles will be applied only when the width of the viewport is less than or equal to 301 pixels. */
 @media (max-width: 301px) {
+  .header1 {
+    font-size: 0.8rem;
+    /* color: black; */
+  }
   .addtaskbtn,
   .logoutbtn {
-    font-size: 10px;
+    font-size: 0.52rem;
+    margin: 0.2rem;
   }
-
-  .header-h1 {
-    font-size: 8px;
-  }
-
-  .middle-child {
-    font-size: 16px;
+  .middle-child,
+  .noTask {
+    font-size: 0.72rem;
+    /* background-color: yellow; */
   }
 
   .TaskContent h1 {
-    font-size: 18px;
+    font-size: 0.72rem;
   }
   .TaskContent h2,
   .TaskContent h3 {
-    font-size: 12px;
+    font-size: 0.65rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 0.52rem;
+    margin: 0.2rem;
+  }
+}
+
+/* enclosed styles will be applied only when the width of the viewport is less than or equal to 285 pixels. */
+@media (max-width: 285px) {
+  .header1 {
+    font-size: 0.77rem;
+    /* color: black; */
+  }
+  .addtaskbtn,
+  .logoutbtn {
+    font-size: 0.48rem;
+  }
+  .middle-child,
+  .noTask {
+    font-size: 0.64rem;
+    /* background-color: yellow; */
+  }
+
+  .TaskContent h1 {
+    font-size: 0.65rem;
+  }
+  .TaskContent h2,
+  .TaskContent h3 {
+    font-size: 0.62rem;
+  }
+  .editbtn,
+  .deletebtn {
+    font-size: 0.5rem;
+    margin: 0.2rem;
   }
 }

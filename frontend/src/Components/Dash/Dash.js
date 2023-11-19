@@ -47,13 +47,12 @@ const Dash = () => {
     // Check if token is not present, indicating that the user is not authenticated
     if (!token) {
       setTimeout(() => {
-        alert('Please Login to create task');
+        alert("Please Login to create task");
         navigate("/login"); // redirect to '/login' page after 2 sec delay
-      }, 2000)
+      }, 2000);
       return;
     }
 
-    
     // If the token is present, indicating that the user is authenticated
     else {
       // Decodes the token to extract information about the user like --> {{email, id and iat}}
@@ -226,7 +225,7 @@ const Dash = () => {
           ))
         ) : (
           // If there are no tasks available
-          <h1>No Task Added Yet!</h1>
+          <h1 className="noTask">No task created yet!</h1>
         )}
       </div>
     </div>
