@@ -12,32 +12,34 @@
   height: 65%;
   width: 50%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   /* background-color: #040202; */
+  /* background-color: yellow; */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* CSS properties for Form "Createcontainer -> Textfield */
 .textfield {
-  height: 70%;
+  height: 100%;
   width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: red; */
 }
 
 /* CSS properties for Form Textfield --> Inputfield */
 
 .inputfield {
-  height: fit-content;
-  font-size: 20px;
-  padding: 1.3vmax;
-  margin-top: 0.7rem;
+  font-size: 1.3rem;
+  padding: 0.9rem;
   border-radius: 6px;
   border: 1px solid rgb(206, 203, 203);
   outline: none;
+  /* background-color: pink; */
 }
 
 .inputfield:hover {
@@ -48,28 +50,17 @@
   border: 3px solid black;
 }
 
-/* CSS properties for Form "Createcontainer --> CreateButton*/
-
-.CreateButton {
-  /* height: 30%; */
-  min-height: fit-content;
-  /* background-color: rgb(228, 154, 154); */
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CSS properties for Form CreateButton -> addTask*/
+/* CSS properties for addTask button*/
 
 .addTask {
   width: 100%;
-  font-size: 20px;
-  padding: 6px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem;
   color: white;
+  cursor: pointer;
   background-color: rgb(7, 151, 7);
   border-radius: 5px;
-  margin-top: 0.8rem;
 }
 
 .addTask:hover {
@@ -79,104 +70,166 @@
 /* ------>>>> RESPONSIVE  <<<<------- */
 
 /* @media queries are used to apply specific styles to a web page based on the characteristics of the device or viewport, such as its width, height, or orientation */
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 843 pixels. */
-
-@media (max-width: 843px) {
-  .inputfield {
-    font-size: 18px;
-  }
-  .addTask {
-    font-size: 16px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 759pixels. */
-@media (max-width: 759px) {
-  .Createcontainer {
-    height: 60%;
-  }
-  .inputfield {
-    font-size: 16px;
-  }
-  .addTask {
-    font-size: 14px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 676 pixels. */
-@media (max-width: 676px) {
-  .Createcontainer {
-    height: 50%;
-  }
-  .inputfield {
-    font-size: 14px;
-  }
-  .addTask {
-    font-size: 13px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 592 pixels. */
-@media (max-width: 592px) {
-  .Createcontainer {
-    height: 42%;
-  }
-  .inputfield {
-    font-size: 12px;
-  }
-  .addTask {
-    font-size: 12px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 509 pixels. */
-@media (max-width: 509px) {
-  .Createcontainer {
-    height: 40%;
-  }
-  .inputfield {
-    font-size: 12px;
-  }
-  .addTask {
-    font-size: 11px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 400 pixels. */
-@media (max-width: 400px) {
-  .Createcontainer {
-    height: 36%;
-  }
-  .inputfield {
-    font-size: 10px;
-  }
-  .addTask {
-    font-size: 10px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 369 pixels. */
-@media (max-width: 369px) {
-  .Createcontainer {
-    height: 32%;
-  }
-  .inputfield {
-    font-size: 9px;
-  }
-  .addTask {
-    font-size: 8px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 306 pixels. */
-@media (max-width: 306px) {
+/* when the width of the viewport is between 1024 pixels (min-width: 1024px) and 1366 pixels (max-width: 1366px). */
+@media (min-width: 1024px) and (max-width: 1366px) {
   .Createcontainer {
     height: 30%;
+    width: 70%;
+    margin-top: 4rem;
   }
+
   .inputfield {
-    font-size: 9px;
+    font-size: 1.5rem;
   }
   .addTask {
-    font-size: 7px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .Createcontainer {
+    height: 32%;
+    width: 80%;
+    margin-top: 3.5rem;
+  }
+  .inputfield {
+    font-size: 1.4rem;
+  }
+  .addTask {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Createcontainer {
+    height: 40%;
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .inputfield {
+    font-size: 1.3rem;
+  }
+  .addTask {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1368px) {
+  .Createcontainer {
+    height: 30%;
+    width: 80%;
+    margin-top: 4rem;
+  }
+
+  .inputfield {
+    font-size: 1.3rem;
+  }
+  .addTask {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 932px) {
+  .Createcontainer {
+    height: 46%;
+    width: 80%;
+    margin-top: 3.6rem;
+  }
+
+  .inputfield {
+    font-size: 1.3rem;
+  }
+  .addTask {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .Createcontainer {
+    height: 30%;
+    width: 70%;
+    margin-top: 4rem;
+  }
+
+  .inputfield {
+    font-size: 1.5rem;
+  }
+  .addTask {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .Createcontainer {
+    height: 32%;
+    width: 80%;
+    margin-top: 3.5rem;
+  }
+  .inputfield {
+    font-size: 1.4rem;
+  }
+  .addTask {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Createcontainer {
+    height: 45%;
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .inputfield {
+    font-size: 1.3rem;
+  }
+  .addTask {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 712px) and (max-width: 1368px) {
+  .Createcontainer {
+    height: 30%;
+    width: 80%;
+    margin-top: 4rem;
+  }
+
+  .inputfield {
+    font-size: 1.3rem;
+  }
+  .addTask {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .Createcontainer {
+    height: 45%;
+    width: 80%;
+    margin-top: 4rem;
+  }
+
+  .inputfield {
+    font-size: 1.2rem;
+  }
+  .addTask {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 384px) and (max-width: 726px) {
+  .Createcontainer {
+    height: 50%;
+    width: 80%;
+    margin-top: 3.5rem;
+  }
+
+  .inputfield {
+    font-size: 1.1rem;
+  }
+  .addTask {
+    font-size: 1rem;
   }
 }

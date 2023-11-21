@@ -1,51 +1,54 @@
 .page {
   height: 88vh;
   width: 100vw;
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: aqua; */
 }
 
 .container {
-  /* height: 55%; */
-  height: fit-content;
-  width: 50%;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* margin-top: -10vmax; */
-  margin-top: -8vmax;
-  background-color: white;
+  height: 50%;
+  width: 40%;
+  padding: 1.3rem;
+  margin-top: -5.6rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   /* background-color: greenyellow; */
 }
 
+/* section - 1 */
 .h1 {
-  font-size: 22px;
+  height: 15%;
+  width: 100%;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: -2px;
-  margin-top: 7px;
+  text-align: center;
   /* background-color: red; */
 }
+
+/* section - 2 */
 .input {
-  height: 70%;
-  width: 80%;
+  height: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: aqua; */
+  align-items: center;
+  /* background-color: yellow; */
 }
 
 .inputval {
-  font-size: 16px;
-  padding: 1.3vmax;
-  margin-top: 1.5vmax;
+  font-size: 1.3rem;
+  padding: 0.8rem;
   border-radius: 5px;
   border: 1px solid rgb(206, 203, 203);
   outline: none;
+}
+
+.inputval[type="email"],
+.inputval[type="password"] {
+  width: calc(100% - 1.9rem);
+  margin: 0.5rem;
 }
 
 .inputval:hover {
@@ -55,30 +58,177 @@
   border: 2px solid black;
 }
 
-.btnflex {
-  height: 30%;
-  width: 80%;
-  margin-top: 20px;
-  /* background-color: orange; */
-}
-
-.btn {
+.loginbtn {
   width: 100%;
-  font-size: 20px;
-  padding: 6px;
   color: white;
+  font-size: 1.8rem;
+  padding: 0.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+  cursor: pointer;
   border-radius: 5px;
-  background-color: rgb(2, 139, 251);
-  transition: background-color 0.3s ease; /* Add a transition for smooth hover effect */
-  margin-top: -7px;
+  background-color: rgb(4, 164, 4);
+  transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: rgba(
-    148,
-    242,
-    7,
-    0.9
-  ); /* Adjust the alpha value to control the hover effect */
-  color: black;
+.loginbtn:hover {
+  background-color: rgb(6, 216, 6);
+}
+
+.linkcss2 {
+  width: 100%;
+  text-align: start;
+  color: blue;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.linkcss2:hover {
+  color: rgb(7, 7, 156);
+}
+
+/* ------>>>> RESPONSIVE  <<<<------- */
+
+/* @media queries are used to apply specific styles to a web page based on the characteristics of the device or viewport, such as its width, height, or orientation */
+/* when the width of the viewport is between 1024 pixels (min-width: 1024px) and 1366 pixels (max-width: 1366px). */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .container {
+    height: 20%;
+    width: 50%;
+    margin-top: -55rem;
+  }
+  .h1 {
+    font-size: 2rem;
+  }
+  .inputval {
+    font-size: 1.6rem;
+  }
+  .loginbtn {
+    font-size: 1.6rem;
+  }
+  .linkcss2 {
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .container {
+    height: 23%;
+    width: 50%;
+    margin-top: -50rem;
+  }
+  .h1 {
+    font-size: 2rem;
+  }
+  .inputval {
+    font-size: 1.5rem;
+  }
+  .loginbtn {
+    font-size: 1.6rem;
+  }
+  .linkcss2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    height: 29%;
+    width: 60%;
+    margin-top: -30rem;
+  }
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .inputval {
+    font-size: 1.3rem;
+  }
+  .loginbtn {
+    font-size: 1.4rem;
+  }
+  .linkcss2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1368px) {
+  .container {
+    height: 22%;
+    width: 50%;
+    margin-top: -48rem;
+  }
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .inputval {
+    font-size: 1.3rem;
+  }
+  .loginbtn {
+    font-size: 1.4rem;
+  }
+  .linkcss2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 932px) {
+  .container {
+    height: 30%;
+    width: 60%;
+    margin-top: -26rem;
+  }
+  .h1 {
+    font-size: 1.6rem;
+  }
+  .inputval {
+    font-size: 1rem;
+  }
+  .loginbtn {
+    font-size: 1.2rem;
+  }
+  .linkcss2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .container {
+    height: 35%;
+    width: 60%;
+    margin-top: -18rem;
+  }
+  .h1 {
+    font-size: 1.6rem;
+    margin-top: -0.5rem;
+  }
+  .inputval {
+    font-size: 1rem;
+  }
+  .loginbtn {
+    font-size: 1.1rem;
+  }
+  .linkcss2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 667px) {
+  .container {
+    height: 32%;
+    width: 60%;
+    margin-top: -18rem;
+  }
+  .h1 {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+  }
+  .inputval {
+    font-size: 1rem;
+  }
+  .loginbtn {
+    font-size: 1.2rem;
+  }
+  .linkcss2 {
+    font-size: 0.9rem;
+  }
 }

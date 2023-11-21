@@ -84,7 +84,10 @@ const Login = () => {
       <Navbar />
       <div className="page">
         <div className="container">
-          <p className="h1">LOGIN</p>
+          {/* section - 1 */}
+          <div className="h1">Login</div>
+
+          {/* section - 2 */}
           <div className="input">
             <input
               className="inputval"
@@ -104,12 +107,11 @@ const Login = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="btnflex">
-            <button onClick={LoginData} className="btn">
+
+            <button onClick={LoginData} className="loginbtn">
               Login
             </button>
-            <Link to={"/"} style={{ color: "blue" }}>
+            <Link to={"/"} className="linkcss2">
               Don't have an account? Sign Up
             </Link>
           </div>

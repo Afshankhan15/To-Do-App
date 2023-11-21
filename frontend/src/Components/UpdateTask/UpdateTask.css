@@ -12,9 +12,9 @@
   height: 80%;
   width: 60%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -22,21 +22,19 @@
 
 /* CSS properties for Form "Updatecontainer -> Textfield */
 .textfield-update {
-  height: 82%;
+  height: 100%;
   width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   /* background-color: red; */
 }
 
 /* CSS properties for Form Textfield --> Inputfield */
 
 .inputfield-update {
-  /* height: fit-content; */
-  /* background-color: yellow; */
-  font-size: 20px;
-  padding: 1.3vmax;
-  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  padding: 1rem;
   border-radius: 6px;
   border: 1px solid rgb(206, 203, 203);
   outline: none;
@@ -50,146 +48,128 @@
   border: 3px solid black;
 }
 
-/* CSS properties for Form "Updatecontainer --> UpdateButton*/
-
-.UpdateButton {
-  /* height: 30%; */
-  height: fit-content;
-  /* background-color: rgb(228, 154, 154); */
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CSS properties for Form UpdateButton -> addTask*/
+/* CSS properties for Form UpdateButton */
 
 .UpdateTasks {
   width: 100%;
-  font-size: 20px;
-  padding: 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
   color: white;
   background-color: blue;
   border-radius: 5px;
-  margin-top: 1rem;
+  cursor: pointer;
 }
 
 .UpdateTasks:hover {
-  background-color: rgb(45, 45, 221);
+  background-color: rgb(7, 7, 188);
 }
 
 /* ------>>>> RESPONSIVE  <<<<------- */
 
 /* @media queries are used to apply specific styles to a web page based on the characteristics of the device or viewport, such as its width, height, or orientation */
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 843 pixels. */
 
-@media (max-width: 843px) {
-  .inputfield-update {
-    font-size: 18px;
-  }
-  .UpdateTasks {
-    font-size: 16px;
-  }
-}
-
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 759pixels. */
-@media (max-width: 759px) {
+/* when the width of the viewport is between 1024 pixels (min-width: 1024px) and 1366 pixels (max-width: 1366px). */
+@media (min-width: 1024px) and (max-width: 1366px) {
   .Updatecontainer {
-    height: 70%;
-    width: 28rem;
+    height: 35%;
+    width: 75%;
+    margin-top: 4rem;
   }
+
   .inputfield-update {
-    font-size: 16px;
+    font-size: 1.5rem;
   }
   .UpdateTasks {
-    font-size: 14px;
+    font-size: 1.6rem;
   }
 }
 
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 676 pixels. */
-@media (max-width: 676px) {
+@media (min-width: 820px) and (max-width: 1180px) {
   .Updatecontainer {
-    height: 65%;
-    width: 22rem;
+    height: 40%;
+    width: 80%;
+    margin-top: 4rem;
   }
   .inputfield-update {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .UpdateTasks {
-    font-size: 13px;
+    font-size: 1.5rem;
   }
 }
 
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 592 pixels. */
-@media (max-width: 592px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .Updatecontainer {
-    height: 62%;
-    width: 16.5rem;
+    height: 48%;
+    width: 80%;
+    margin-top: 4rem;
   }
+
   .inputfield-update {
-    font-size: 12px;
+    font-size: 1.4rem;
   }
   .UpdateTasks {
-    font-size: 12px;
-    margin-top: 0.1rem;
+    font-size: 1.4rem;
   }
 }
 
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 509 pixels. */
-@media (max-width: 509px) {
+@media (min-width: 912px) and (max-width: 1368px) {
   .Updatecontainer {
-    height: 58%;
-    width: 16rem;
+    height: 38%;
+    width: 80%;
+    margin-top: 4rem;
   }
+
   .inputfield-update {
-    font-size: 12px;
+    font-size: 1.5rem;
   }
   .UpdateTasks {
-    font-size: 11px;
-    margin-top: 0.6rem;
+    font-size: 1.4rem;
   }
 }
 
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 409 pixels. */
-@media (max-width: 409px) {
+@media (min-width: 430px) and (max-width: 932px) {
   .Updatecontainer {
     height: 54%;
-    width: 15.5rem;
+    width: 80%;
+    margin-top: 3.6rem;
   }
+
   .inputfield-update {
-    font-size: 10px;
+    font-size: 1.5rem;
   }
   .UpdateTasks {
-    font-size: 10px;
-    margin-top: 0.3rem;
+    font-size: 1.3rem;
   }
 }
 
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 377 pixels. */
-@media (max-width: 377px) {
+@media (min-width: 390px) and (max-width: 844px) {
   .Updatecontainer {
-    height: 50%;
-    width: 15rem;
+    height: 58%;
+    width: 80%;
+    margin-top: 3.6rem;
   }
+
   .inputfield-update {
-    font-size: 9px;
+    font-size: 1.4rem;
   }
   .UpdateTasks {
-    font-size: 8px;
-    margin-top: 0.4rem;
+    font-size: 1.2rem;
   }
 }
 
-/* enclosed styles will be applied only when the width of the viewport is less than or equal to 313 pixels. */
-@media (max-width: 313px) {
+@media (min-width: 375px) and (max-width: 667px) {
   .Updatecontainer {
-    height: 32%;
+    height: 76%;
+    width: 80%;
+    margin-top: 3.6rem;
   }
+
   .inputfield-update {
-    font-size: 9px;
+    font-size: 1.3rem;
   }
   .UpdateTasks {
-    font-size: 6px;
-    margin: 0.2rem;
+    font-size: 1.2rem;
   }
 }

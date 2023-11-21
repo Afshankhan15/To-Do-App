@@ -131,9 +131,8 @@ const UpdateTask = () => {
             onChange={handleChange} // Calls the handleChange function when the input value changes
             required
           />
-        </div>
-        {/* UpdateButton block element to Update Task Details*/}
-        <div className="UpdateButton">
+
+          {/* UpdateButton */}
           <button onClick={() => updateTask(task._id)} className="UpdateTasks">
             Update New Task
           </button>

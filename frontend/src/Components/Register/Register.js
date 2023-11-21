@@ -92,7 +92,10 @@ const Register = () => {
       <Navbar />
       <div className="register-page">
         <div className="register-container">
-          <p className="register-h1">Register</p>
+          {/* section - 1 */}
+          <div className="register-h1">Register</div>
+
+          {/* section - 2 */}
           <div className="register-input">
             <input
               className="register-inputval"
@@ -121,12 +124,12 @@ const Register = () => {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="register-btnflex">
-            <button onClick={RegisterData} className="register-btn">
+
+            <button className="register-btn" onClick={RegisterData}>
               Sign Up
             </button>
-            <Link to={"/"} style={{ color: "blue" }}>
+
+            <Link to={"/login"} className="linkcss">
               Already have an account? Sign In
             </Link>
           </div>

@@ -137,10 +137,7 @@ const CreateTask = () => {
             onChange={handleChange}
             required
           />
-        </div>
 
-        {/* CreateButton block element */}
-        <div className="CreateButton">
           <button onClick={createTask} className="addTask">
             Create New Task
           </button>
