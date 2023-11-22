@@ -1,6 +1,6 @@
 import "./Dash.css"; // Import CSS file for styling
 import React, { useEffect, useState } from "react";
-import jwtDecode from "jwt-decode"; // Import to decode the User Details
+import { jwtDecode } from "jwt-decode"; // Import to decode the User Details
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation between routes
 import axios from "axios"; // Import Axios for making HTTP requests to server
 
