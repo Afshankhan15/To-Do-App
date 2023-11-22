@@ -1,7 +1,7 @@
 .register-page {
   height: 86vh;
   width: 100vw;
-  /* background-color: aqua; */
+  background-color: rgb(249, 248, 248);
   display: flex;
   justify-content: center;
   align-items: center;

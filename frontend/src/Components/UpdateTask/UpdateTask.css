@@ -4,7 +4,9 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(249, 248, 248);
+
 }
 
 /* CSS properties for Form Entire Box Updatecontainer */

@@ -4,7 +4,8 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(249, 248, 248);
 }
 
 /* CSS properties for Form Entire Box Createcontainer */
@@ -15,8 +16,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
-  /* background-color: #040202; */
-  /* background-color: yellow; */
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }

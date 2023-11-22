@@ -52,7 +52,6 @@ const Dash = () => {
       }, 2000);
       return;
     }
-
     // If the token is present, indicating that the user is authenticated
     else {
       // Decodes the token to extract information about the user like --> {{email, id and iat}}
