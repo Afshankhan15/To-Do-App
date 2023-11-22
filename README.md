@@ -1,4 +1,4 @@
 # To-Do-App
 ##How to start
-1. **Frontend ->** ToDo-App\backend>npm run dev
-2. **Backend ->** ToDo-App\frontend>npm start
+1. **Backend ->** ToDo-App\backend>npm run dev
+2. **Frontend ->** ToDo-App\frontend>npm start
